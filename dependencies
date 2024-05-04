@@ -3,7 +3,8 @@ CONDA_BASE=$(conda info --base)
 conda create -y -n pignet python=3.10
 source $CONDA_BASE/etc/profile.d/conda.sh
 conda activate pignet
-
+conda install -c schrodinger -c conda-forge pymol
+conda install -y -c bioconda smina 
 conda install -y pytorch -c pytorch
 conda install -y -pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch
 conda install -y -c conda-forge numpy
@@ -11,4 +12,3 @@ conda install -y -c conda-forge biopython
 conda install -y -c anaconda scikit-learn
 conda install -y -c conda-forge scipy
 conda install -y -c conda-forge rdkit
-conda install -y -c bioconda smina 
