@@ -1,6 +1,6 @@
 #!/bin/bash
 CONDA_BASE=$(conda info --base)
-conda create -y -n pignet python=3.6
+conda create -y -n pignet python=3.10
 source $CONDA_BASE/etc/profile.d/conda.sh
 conda activate pignet
 
