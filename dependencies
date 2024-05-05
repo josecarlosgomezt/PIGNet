@@ -1,9 +1,9 @@
 #!/bin/bash
 CONDA_BASE=$(conda info --base)
 conda create -y -n pignet python=3.11
-conda install -y -c libgcc-ng
 source $CONDA_BASE/etc/profile.d/conda.sh
 conda activate pignet
+conda install -y -c libgcc-ng
 conda install -y -c schrodinger pymol-bundle=2.6
 conda install -y -c conda-forge numpy 
 conda install -y -c conda-forge biopython
